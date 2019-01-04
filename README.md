@@ -3,7 +3,7 @@
 
 ### Egg Timer
 A simple timer with start and pause button:
-![Egg Timer screenshot](https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/egg_timer.png)
+<div align=center><img width="150" src="https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/egg_timer.png"alt="Egg Timer screenshot"/></div>
 
 ### Times Table:
 Practice with table view
