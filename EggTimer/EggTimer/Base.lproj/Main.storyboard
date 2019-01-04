@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,12 +13,16 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N87-uz-49k"/>
+                        <viewControllerLayoutGuide type="bottom" id="zuT-xI-P2v"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usi-if-Omr">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="-10s" id="HhO-IR-UVZ">
@@ -42,51 +45,35 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-Wb-zUd">
-                                <rect key="frame" x="146.5" y="303.5" width="82" height="60"/>
+                                <rect key="frame" x="166" y="338" width="82" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-7d-qWW">
-                                <rect key="frame" x="0.0" y="13" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqP-zC-aT7">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wbV-CX-xJf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aS8-qW-LgG">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                <subviews>
-                                                    <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqP-zC-aT7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                        <items>
-                                                            <navigationItem title="Egg Timer" id="kkV-M8-swG">
-                                                                <barButtonItem key="leftBarButtonItem" systemItem="pause" id="UnR-yy-Jgp">
-                                                                    <connections>
-                                                                        <action selector="stopButtonPressed:" destination="BYZ-38-t0r" id="VBF-GK-UdL"/>
-                                                                    </connections>
-                                                                </barButtonItem>
-                                                                <barButtonItem key="rightBarButtonItem" systemItem="play" id="WQQ-10-5d0">
-                                                                    <connections>
-                                                                        <action selector="startButtonPressed:" destination="BYZ-38-t0r" id="VWb-ee-ECE"/>
-                                                                    </connections>
-                                                                </barButtonItem>
-                                                            </navigationItem>
-                                                        </items>
-                                                    </navigationBar>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                                <items>
+                                    <navigationItem title="Egg Timer" id="kkV-M8-swG">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="pause" id="UnR-yy-Jgp">
+                                            <connections>
+                                                <action selector="stopButtonPressed:" destination="BYZ-38-t0r" id="VBF-GK-UdL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="WQQ-10-5d0">
+                                            <connections>
+                                                <action selector="startButtonPressed:" destination="BYZ-38-t0r" id="VWb-ee-ECE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Pic-Wb-zUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5kg-bM-VOs"/>
-                            <constraint firstItem="Pic-Wb-zUd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QtB-ly-3R6"/>
+                            <constraint firstItem="Pic-Wb-zUd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D4r-dW-dyk"/>
+                            <constraint firstItem="Pic-Wb-zUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLw-24-pwk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="timerLabel" destination="Pic-Wb-zUd" id="VYw-ML-eYj"/>
@@ -94,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="31.934032983508249"/>
+            <point key="canvasLocation" x="82.608695652173921" y="30.978260869565219"/>
         </scene>
     </scenes>
 </document>
