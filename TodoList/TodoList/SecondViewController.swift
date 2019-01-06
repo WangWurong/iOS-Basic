@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var itemTextField: UITextField!
     
     @IBAction func add(_ sender: Any) {

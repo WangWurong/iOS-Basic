@@ -18,3 +18,14 @@ A simple todo list app with editable table cells, interaction with keyboard, per
 <img width="150" src="https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/todoList_2.png" alt="Times table screenshot"/>
 <img width="150" src="https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/todoList_3.png" alt="Times table screenshot"/>
 
+### What's the Weather:
+A simple app that shows the weather forecast by entering the city's name.
+
+weather info from: https://www.weather-forecast.com
+
+background image from: https://unsplash.com (thanks for Daniele Buso)
+
+
+
+
+
