@@ -25,7 +25,8 @@ weather info from: https://www.weather-forecast.com
 
 background image from: https://unsplash.com (thanks for Daniele Buso)
 
-
+<img width="150" src="https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/whats_the_wether_1.png" alt="Whats the weather screenshot"/>
+<img width="150" src="https://github.com/WangWurong/iOS-Basic/blob/master/Screenshot/whats_the_wether_2.png" alt="Whats the weather screenshot"/>
 
 
 
